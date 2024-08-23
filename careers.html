@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Careers at Bitskfrat Pvt. Ltd.</title>
+</head>
+
+<body>
+    <main class="grid grid-cols-12 gap-x-6">
+        <navigation
+            class="col-start-1 col-end-[-1] flex justify-between items-center py-8 sticky top-0 bg-white z-10 px-[50px] lg:px-[100px]">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Bitskfrat Logo" /></a>
+
+            </div>
+            <div class="hidden lg:block">
+                <div class="main-nav font-bitskraftMid flex list-none gap-8 text-lg">
+                    <li class="hover:text-primary cursor-pointer"><a href="index.html">Home</a></li>
+                    <li class="cursor-pointer group">
+                        <a class="hover:text-primary " href="#services">Services</a>
+                        <ul  class="dropdown py-4 pl-6 pr-12 invisible group-hover:visible absolute shadow-wbutton z-40 bg-white rounded-[10px]">
+                                <li class="hover:text-primary py-2">
+                                 <a href="dedicated-teams.html">Dedicated Team </a>
+                                </li>
+                                <li class="hover:text-primary py-2"> <a href="staff-auhmentation.html">Staff Augmentation</a></li>
+                                <li class="hover:text-primary py-2"> <a href="software-outsourcing.html">Software Outsourcing</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="cursor-pointer group">
+                        <a class="hover:text-primary ">Products</a>
+                        <ul
+                        class="dropdown py-4 pl-6 pr-12 invisible group-hover:visible absolute shadow-wbutton z-40 bg-white rounded-[10px]">
+                        <li class="hover:text-primary py-2">
+                        <a href="https://mikha.bitskraft.com/" target="_blank">    Mikha </a>
+                        </li>
+                        <li class="hover:text-primary py-2">
+                            <a href="https://karyaflow.bitskraft.com/" target="_blank">  Karyaflow</a></li>
+                        <li class="hover:text-primary py-2">
+                            <a href="https://koili.com.np/" target="_blank">    Koili</a> </li>
+
+                    </ul>
+                    </li>
+                    <li class="hover:text-primary cursor-pointer"><a href="aboutus.html">About Us</a></li>
+                    <li class="text-primary">Careers</li>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div
+                    class="contact-us text-center rounded-button bg-white shadow-wbutton px-6 py-4 font-bitskraftMid text-primary hover:text-white hover:bg-primary hover:shadow-bbutton cursor-pointer">
+                    <a href="contact.html"> Contact Us</a>
+                </div>
+            </div>
+            <div class="lg:hidden relative">
+                <button id="menu-toggle">
+                    <i class="bx bx-menu text-2xl" undefined></i>
+                </button>
+                <div id="menu" class="bg-white w-[100vw] absolute right-0 h-[100vh] mt-8 hidden">
+                    <div class="font-bitskraftMid flex flex-col list-none gap-8 text-lg text-center pt-12 pl-12">
+                        <li class="hover:text-primary cursor-pointer">Home</li>
+                        <li class="hover:text-primary cursor-pointer">Services</li>
+                        <li class="hover:text-primary cursor-pointer">Products</li>
+                        <li class="hover:text-primary cursor-pointer">About Us</li>
+                        <li class="text-primary">Careers</li>
+                    </div>
+                </div>
+            </div>
+        </navigation>
+
+        <!-- landing  -->
+        <div
+            class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center px-[50px] lg:px-[100px] 2xl:mx-[100px]">
+            <section class="landing_text col-start-1 col-end-[-1] lg:col-end-6">
+                <div class="flex flex-col">
+                    <div class="text-primary uppercase font-bitskraftBol pb-4">
+                        Careers
+                    </div>
+                    <div class="relative font-bitskraftBol text-5xl">
+                        Build Your Career<br>with Us!
+                    </div>
+                    <div class="font-bitskraftReg text-gray text-lg pb-4 pt-5">
+                        At Bitskraft, we're always looking for passionate and talented individuals to help us push the
+                        boundaries of technology.
+                        <br>If you're ready to innovate, grow, and make an impact, let's build the future together.
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="landing_image row-start-1 col-start-1 lg:col-start-8 col-end-[-1]" data-aos="fade-up-left"  data-aos-duration="2000">
+                <img src="images/careers.png" alt="Landing page image" />
+            </section>
+        </div>
+
+
+
+        <!-- Open Positions  -->
+        <section class="services col-start-1 col-end-[-1] mt-16 py-20 px-[50px] lg:px-[100px]">
+            <div class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center 2xl:mx-[100px]">
+                <div class="flex flex-col col-start-1 col-end-[-1] text-center">
+                    <div class="text-primary uppercase  font-bitskraftBol pb-2">
+                        AVAILABLE POSITIONS
+                    </div>
+                    <div class="relative font-bitskraftBol text-3xl lg:text-4xl 2xl:text-4xl">
+                        Current Openings
+                    </div>
+                    <div class="font-bitskraftReg text-gray text-base lg:text-xl lg:w-[80%] mx-auto pb-8 pt-5">
+                        Explore the current opportunities at Bitskraft. Below, you'll find a list of vacancies waiting
+                        for talented individuals like you. If you see a role that matches your skills and ambitions, we
+                        encourage you to apply and join our innovative team.
+                    </div>
+                </div>
+
+                <section class="landing_text lg:col-start-2 col-span-full" >
+
+                    <div class="accordian">
+
+                        <div
+                            class="accordian_header bg-primary-light_ii py-4 hover:bg-primary hover:text-white cursor-pointer rounded-button flex items-center justify-between" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="px-8 font-bitskraftBol">.NET Senior Software Engineer</div>
+                            <i class="bx bx-chevron-down mr-8 text-2xl"></i>
+                        </div>
+
+                        <div
+                            class="accordian_body max-h-0 overflow-hidden transition-all duration-200 ease-out font-bitskraftReg">
+                            <p class=" px-8 py-4">
+                                Location : Kathmandu, Nepal , On-site ( Work from Office)
+                                <br>
+                                Full Time
+                                <br> <br>
+                                <span>
+                                    As a Sr. Software Engineer/Architect, you will help drive team(s) in meeting
+                                    project objectives. You are expected to foster high performing technical teams.
+                                    You will also be responsible for the design of complex systems at the detailed
+                                    level, code, and build robust automated unit and integration tests. You will
+                                    collaborate and communicate effectively with architects, engineers, QA, DBAs,
+                                    and Business managers to solve complex problems.
+                                </span>
+                            <div class="font-bitskraftReg px-8">
+                                <span class="font-bitskraftBol"> Required </span>
+                                <span>
+                                    <li>BS Computer Science or related field or equivalent industry experience
+                                    </li>
+                                    <li>Strong skills and knowledge of C# and Microsoft .NET Framework
+
+                                    </li>
+                                    <li>Minimum 6 years developing enterprise applications with proven enterprise
+                                        experience level with RDBMS and SQL, preferred
+                                    </li>
+                                    <li>Knowledge of building Restful API with Authentication layer
+
+                                    </li>
+                                    <li>Knowledge of Messaging Queue such as MQTT and plug-in MQTT Auth is preferred
+
+                                    </li>
+                                    <li>Knowledge of Internet of Things (IOT) is preferred
+
+                                    </li>
+                                    <li>Knowledge of using Microsft Azure is preferred
+
+                                    </li>
+                                    <li>Experience with Continuous Integration and writing automated unit and
+                                        integration tests
+
+                                    </li>
+                                </span>
+
+                            </div>
+
+                            <div class="font-bitskraftReg px-8 py-4">
+                                <span class="font-bitskraftBol"> Job Responsiblities </span>
+                                <span>
+                                    <li>Design, develop and enhance -threaded software components and design
+                                        documentation
+
+                                    </li>
+                                    <li>Conduct unit and integration testing using appropriate methodology and
+                                        techniques
+
+
+                                    </li>
+                                    <li>Collaborate with business to define requirements and design detailed
+                                        engineering solutions
+
+                                    </li>
+                                    <li>Continuously self-educate and mentor team members in proper software
+                                        engineering methods and techniques
+
+                                    </li>
+                                    <li>Review software engineering approach to proposed solutions to ensure
+                                        adherence to best practice
+
+                                    </li>
+
+                                </span>
+                            </div>
+                            <div class="font-bitskraftReg px-8 py-4">
+                                <span class="font-bitskraftBol"> No. of Positions: 3 </span>
+                            </div>
+                            <div
+                                class="contact-us w-fit text-center ml-8 mt-4 text-white rounded-button bg-primary shadow-bbutton px-6 py-4 font-bitskraftMid text-primary hover:text-primary hover:bg-white hover:shadow-wbutton cursor-pointer">
+                                <a href="contact.html"> Apply Now </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordian_header mt-4 bg-primary-light_ii py-4 hover:bg-primary hover:text-white cursor-pointer rounded-button flex items-center justify-between" data-aos="fade-up" data-aos-duration="1700">
+                            <div class="px-8 font-bitskraftBol">QA Engineer</div>
+                            <i class="bx bx-chevron-down mr-8 text-2xl"></i>
+                        </div>
+
+                        <div class="accordian_body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                            <p class=" px-8 py-4">
+                                Location : Kathmandu, Nepal , On-site ( Work from Office)
+                                <br>
+                                Full Time
+                                <br> <br>
+                                <span>
+                                    As a Sr. Software Engineer/Architect, you will help drive team(s) in meeting
+                                    project objectives. You are expected to foster high performing technical teams.
+                                    You will also be responsible for the design of complex systems at the detailed
+                                    level, code, and build robust automated unit and integration tests. You will
+                                    collaborate and communicate effectively with architects, engineers, QA, DBAs,
+                                    and Business managers to solve complex problems.
+                                </span>
+                            <div class="font-bitskraftReg px-8">
+                                <span class="font-bitskraftBol"> Required </span>
+                                <span>
+                                    <li>BS Computer Science or related field or equivalent industry experience
+                                    </li>
+                                    <li>Strong skills and knowledge of C# and Microsoft .NET Framework
+
+                                    </li>
+                                    <li>Minimum 6 years developing enterprise applications with proven enterprise
+                                        experience level with RDBMS and SQL, preferred
+                                    </li>
+                                    <li>Knowledge of building Restful API with Authentication layer
+
+                                    </li>
+                                    <li>Knowledge of Messaging Queue such as MQTT and plug-in MQTT Auth is preferred
+
+                                    </li>
+                                    <li>Knowledge of Internet of Things (IOT) is preferred
+
+                                    </li>
+                                    <li>Knowledge of using Microsft Azure is preferred
+
+                                    </li>
+                                    <li>Experience with Continuous Integration and writing automated unit and
+                                        integration tests
+
+                                    </li>
+                                </span>
+
+                            </div>
+
+                            <div class="font-bitskraftReg px-8 py-4">
+                                <span class="font-bitskraftBol"> Job Responsiblities </span>
+                                <span>
+                                    <li>Design, develop and enhance -threaded software components and design
+                                        documentation
+
+                                    </li>
+                                    <li>Conduct unit and integration testing using appropriate methodology and
+                                        techniques
+
+
+                                    </li>
+                                    <li>Collaborate with business to define requirements and design detailed
+                                        engineering solutions
+
+                                    </li>
+                                    <li>Continuously self-educate and mentor team members in proper software
+                                        engineering methods and techniques
+
+                                    </li>
+                                    <li>Review software engineering approach to proposed solutions to ensure
+                                        adherence to best practice
+
+                                    </li>
+
+                                </span>
+                            </div>
+                            <div class="font-bitskraftReg px-8 py-4">
+                                <span class="font-bitskraftBol"> No. of Positions: 3 </span>
+                            </div>
+                            <div
+                                class="contact-us w-fit text-center ml-8 mt-4 text-white rounded-button bg-primary shadow-bbutton px-6 py-4 font-bitskraftMid text-primary hover:text-primary hover:bg-white hover:shadow-wbutton cursor-pointer">
+                                <a href="contact.html"> Apply Now </a>
+                                </p>
+                            </div>
+                        </div>    
+                        <div
+                        class="accordian_header mt-4 bg-primary-light_ii py-4 hover:bg-primary hover:text-white cursor-pointer rounded-button flex items-center justify-between" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="px-8 font-bitskraftBol">Senior Python Developer</div>
+                        <i class="bx bx-chevron-down mr-8 text-2xl"></i>
+                    </div>
+
+                    <div class="accordian_body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                        <p class=" px-8 py-4">
+                            Location : Kathmandu, Nepal , On-site ( Work from Office)
+                            <br>
+                            Full Time
+                            <br> <br>
+                            <span>
+                                As a Sr. Software Engineer/Architect, you will help drive team(s) in meeting
+                                project objectives. You are expected to foster high performing technical teams.
+                                You will also be responsible for the design of complex systems at the detailed
+                                level, code, and build robust automated unit and integration tests. You will
+                                collaborate and communicate effectively with architects, engineers, QA, DBAs,
+                                and Business managers to solve complex problems.
+                            </span>
+                        <div class="font-bitskraftReg px-8">
+                            <span class="font-bitskraftBol"> Required </span>
+                            <span>
+                                <li>BS Computer Science or related field or equivalent industry experience
+                                </li>
+                                <li>Strong skills and knowledge of C# and Microsoft .NET Framework
+
+                                </li>
+                                <li>Minimum 6 years developing enterprise applications with proven enterprise
+                                    experience level with RDBMS and SQL, preferred
+                                </li>
+                                <li>Knowledge of building Restful API with Authentication layer
+
+                                </li>
+                                <li>Knowledge of Messaging Queue such as MQTT and plug-in MQTT Auth is preferred
+
+                                </li>
+                                <li>Knowledge of Internet of Things (IOT) is preferred
+
+                                </li>
+                                <li>Knowledge of using Microsft Azure is preferred
+
+                                </li>
+                                <li>Experience with Continuous Integration and writing automated unit and
+                                    integration tests
+
+                                </li>
+                            </span>
+
+                        </div>
+
+                        <div class="font-bitskraftReg px-8 py-4">
+                            <span class="font-bitskraftBol"> Job Responsiblities </span>
+                            <span>
+                                <li>Design, develop and enhance -threaded software components and design
+                                    documentation
+
+                                </li>
+                                <li>Conduct unit and integration testing using appropriate methodology and
+                                    techniques
+
+
+                                </li>
+                                <li>Collaborate with business to define requirements and design detailed
+                                    engineering solutions
+
+                                </li>
+                                <li>Continuously self-educate and mentor team members in proper software
+                                    engineering methods and techniques
+
+                                </li>
+                                <li>Review software engineering approach to proposed solutions to ensure
+                                    adherence to best practice
+
+                                </li>
+
+                            </span>
+                        </div>
+                        <div class="font-bitskraftReg px-8 py-4">
+                            <span class="font-bitskraftBol"> No. of Positions: 3 </span>
+                        </div>
+                        <div
+                            class="contact-us w-fit text-center ml-8 mt-4 text-white rounded-button bg-primary shadow-bbutton px-6 py-4 font-bitskraftMid text-primary hover:text-primary hover:bg-white hover:shadow-wbutton cursor-pointer">
+                            <a href="contact.html"> Apply Now </a>
+                            </p>
+                        </div>
+                    </div> 
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
+
+
+        <!-- GPTW  -->
+        <section class="col-start-1 col-end-[-1] bg-primary-light py-20 px-[50px] lg:px-[100px]">
+            <div class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center 2xl:mx-[100px]">
+                <section class="landing_image col-start-1 col-span-full lg:col-end-6 row-start-2 lg:row-start-1" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="images/gptw.png" alt="Landing page image" />
+                </section>
+
+                <section class="landing_text col-start-1 lg:col-start-7 col-end-[-1]">
+                    <div class="flex flex-col">
+                        <div class="text-primary uppercase  font-bitskraftBol pb-2">
+                            Great place to work
+                        </div>
+                        <div class="relative font-bitskraftBol text-3xl lg:text-4xl text-4xl">
+                            What makes us a Great Place to work Certified ?
+                        </div>
+                        <div class="font-bitskraftReg text-gray text-base lg:text-xl pb-8 pt-5">
+                            A great culture, a friendly environment, tremendous growth, equal respect, recognition, and
+                            an amazing group of people makes this place a “Great Place to Work.”
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Global Offices  -->
+        <section class="services col-start-1 col-end-[-1] py-20 px-[50px] lg:px-[100px]">
+            <div class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center 2xl:mx-[100px]">
+                <div class="text-center col-span-full">
+                    <!-- <div class="text-primary uppercase font-bitskraftBol pb-2">
+                        WHERE ARE WE
+                    </div> -->
+                    <div class="relative font-bitskraftBol text-3xl lg:text-4xl">
+                        Global Offices
+                    </div>
+                    <div class="font-bitskraftReg text-gray text-base lg:text-xl pb-8 pt-3 w-[80%] mx-auto">
+                        We have offices in three different countries located in USA, Nepal
+                        and Bangladesh.
+                    </div>
+                </div>
+            </div>
+            <div class="services-section grid grid-cols-12 gap-x-6 gap-y-12 items-center 2xl:mx-[100px] pt-8 pb-16" data-aos="fade-up" data-aos-duration="2000">
+                <div
+                    class="col-start-1 col-span-full md:col-span-6 lg:col-span-4 grid grid-cols-4 gap-6 bg-white shadow-cshadow" >
+                    <div class="flex flex-col col-span-full">
+                        <img src="images/global1.png" alt="Dedicated Teams" class="mb-8" />
+                        <div class="px-6 pb-12 flex flex-col gap-y-4">
+                            <div class="font-bitskraftBol text-lg">
+                                United States
+                            </div>
+                            <div class="font-bitskraftReg">
+                                1460 Broadway,<br> NY 10036,
+                                United States, New York
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="lg:col-start-5 col-span-full md:col-span-6 lg:col-span-4 flex grid grid-cols-4 gap-6 bg-white shadow-cshadow">
+                    <div class="flex flex-col col-span-full">
+                        <img src="images/global2.png" alt="Dedicated Teams" class="mb-8" />
+                        <div class="px-6 pb-12 flex flex-col gap-y-4">
+                            <div class="font-bitskraftBol text-lg">
+                                Nepal
+                            </div>
+                            <div class="font-bitskraftReg">
+                                Naxal, Manakamana Marg, 44600,<br>
+                                Kathmandu, Nepal
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="lg:col-start-9 col-span-full md:col-span-6 lg:col-span-4  flex grid grid-cols-4 gap-6 bg-white shadow-cshadow">
+                    <div class="flex flex-col col-span-full">
+                        <img src="images/global3.png" alt="Dedicated Teams" class="mb-8" />
+                        <div class="px-6 pb-12 flex flex-col gap-y-4">
+                            <div class="font-bitskraftBol text-lg">
+                                Bangladesh
+                            </div>
+                            <div class="font-bitskraftReg">
+                                MAR GARDEN, Block-A Suite-603, Niketon, <br>
+                                Gulshan-1, Bangladesh, Dhaka
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer  -->
+        <section class="services col-start-1 col-end-[-1] py-20 bg-primary-light px-[50px] lg:px-[100px]">
+            <div
+                class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-start 2xl:mx-[100px] bg-[url('/images/map.png')] bg-no-repeat bg-center border-b-[1px] border-gray pb-12">
+                <div class="logo col-start-1 col-span-full lg:col-span-4">
+                    <img src="images/logo.png" alt="Logo" />
+                    <div class="text-gray font-bitskraftReg md:w-[80%] pt-4 text-sm">
+                        We are Bitskraft. We craft tailored technology solutions to bring
+                        your ideas to life with precision & creativity.
+                    </div>
+                </div>
+                <div class="logo col-start-1 lg:col-start-5 col-span-full sm:col-span-8 lg:col-span-3">
+                    <div class="font-bitskraftBol text-lg text-gray">Contact</div>
+                    <div class="font-bitskraftReg flex flex-col">
+                        <div class="mt-8 cursor-pointer text-gray">
+                            <div class="font-bitskraftLig text-sm pb-1">
+                                Looking for collabration?
+                            </div>
+                            <div class="font-bitskraftBol text-lg">info@bitskfraft.com</div>
+                        </div>
+                        <div class="mt-4 cursor-pointer text-gray">
+                            <div class="font-bitskraftLig text-sm pb-1">
+                                Visit Our Head Office
+                            </div>
+                            <div class="font-bitskraftBol text-lg">
+                                Naxal, Kathmandu, Nepal
+                            </div>
+                        </div>
+                        <div class="mt-4 cursor-pointer text-gray">
+                            <div class="font-bitskraftLig text-sm pb-1">
+                                Monday - Friday: 10AM-6PM
+                            </div>
+                            <div class="font-bitskraftBol text-lg">+977-014537311</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo md:col-start-9 col-start-1 col-span-full lg:col-span-2">
+                    <div class="font-bitskraftBol text-lg text-gray">Company</div>
+                    <div class="font-bitskraftReg flex flex-col list-none gap-y-4">
+                        <li class="mt-8 cursor-pointer">Home</li>
+                        <li class="hover:text-primary cursor-pointer">Services</li>
+                        <li class="hover:text-primary cursor-pointer">Products</li>
+                        <li class="hover:text-primary cursor-pointer">About Us</li>
+                        <li class="hover:text-primary cursor-pointer">Careers</li>
+                    </div>
+                </div>
+                <div class="logo col-start-1 lg:col-start-11 col-end-[-1]">
+                    <div class="font-bitskraftBol text-lg text-gray">
+                        Connect With Us
+                    </div>
+                    <div class="font-bitskraftReg flex flex-col list-none gap-y-4">
+                        <li class="mt-8 hover:text-primary cursor-pointer">Facebook</li>
+                        <li class="hover:text-primary cursor-pointer">Instagram</li>
+                        <li class="hover:text-primary cursor-pointer">X</li>
+                        <li class="hover:text-primary cursor-pointer">LinkedIn</li>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-start md:justify-between lg:px-[100px] pt-8 md:pt-12 font-bitskraftReg">
+                <div class="text-gray">&copy;Copyright 2024, Bitskraft Pvt. Ltd.</div>
+                <div class="text-gray list-none flex gap-6">
+                    <li class="hover:text-primary cursor-pointer">Privacy Policy</li>
+                    <li class="hover:text-primary cursor-pointer">Data Policy</li>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

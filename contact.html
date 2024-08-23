@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contact || Bitskfrat Pvt. Ltd.</title>
+</head>
+
+<body>
+    <main class="grid grid-cols-12 gap-x-6">
+        <navigation
+        class="col-start-1 col-end-[-1] flex justify-between items-center py-8 sticky top-0 bg-white z-10 px-[50px] lg:px-[100px]">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Bitskfrat Logo" /></a>
+        </div>
+        <div class="hidden lg:block">
+            <div class="main-nav font-bitskraftMid flex list-none gap-8 text-lg">
+                <li class="hover:text-primary cursor-pointer">
+                <a href="index.html">    Home </a>
+                </li>
+                <li class="cursor-pointer group">
+                    <a class="hover:text-primary " href="#services">Services</a>
+                    <ul  class="dropdown py-4 pl-6 pr-12 invisible group-hover:visible absolute shadow-wbutton z-40 bg-white rounded-[10px]">
+                        <li class="hover:text-primary py-2">
+                            <a href="dedicated-teams.html">Dedicated Team </a>
+                           </li>
+                           <li class="hover:text-primary py-2"> <a href="staff-auhmentation.html">Staff Augmentation</a></li>
+                           <li class="hover:text-primary py-2"> <a href="software-outsourcing.html">Software Outsourcing</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="cursor-pointer group">
+                    <a class="hover:text-primary ">Products</a>
+                    <ul
+                    class="dropdown py-4 pl-6 pr-12 invisible group-hover:visible absolute shadow-wbutton z-40 bg-white rounded-[10px]">
+                    <li class="hover:text-primary py-2">
+                    <a href="https://mikha.bitskraft.com/" target="_blank">    Mikha </a>
+                    </li>
+                    <li class="hover:text-primary py-2">
+                        <a href="https://karyaflow.bitskraft.com/" target="_blank">  Karyaflow</a></li>
+                    <li class="hover:text-primary py-2">
+                        <a href="https://koili.com.np/" target="_blank">    Koili</a> </li>
+
+                </ul>
+                </li>
+                <li class="hover:text-primary cursor-pointer"><a href="aboutus.html">About Us</a></li>
+                <li class="hover:text-primary cursor-pointer"><a href="careers.html">Careers</a></li>
+            </div>
+        </div>
+        <div class="hidden lg:block">
+            <div
+                class="contact-us text-center rounded-button bg-white shadow-wbutton px-6 py-4 font-bitskraftMid text-primary hover:text-white hover:bg-primary hover:shadow-bbutton cursor-pointer">
+                <a href="contact.html"> Contact Us</a>
+            </div>
+        </div>
+        <div class="lg:hidden relative">
+            <button id="menu-toggle">
+                <i class="bx bx-menu text-2xl" undefined></i>
+            </button>
+            <div id="menu" class="bg-white w-[100vw] absolute right-0 h-[100vh] mt-8 hidden">
+                <div class="font-bitskraftMid flex flex-col list-none gap-8 text-lg text-center pt-12 pl-12">
+                    <li class="hover:text-primary cursor-pointer">Home</li>
+                    <li class="hover:text-primary cursor-pointer">Services</li>
+                    <li class="hover:text-primary cursor-pointer">Products</li>
+                    <li class="hover:text-primary cursor-pointer">About Us</li>
+                    <li class="hover:text-primary cursor-pointer">Careers</li>
+                </div>
+            </div>
+        </div>
+    </navigation>
+
+        <!-- landing  -->
+        <div
+            class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center px-[50px] lg:px-[100px] 2xl:mx-[100px]">
+            <section class="landing_text col-start-1 col-end-[-1] lg:col-end-7">
+                <div class="flex flex-col">
+                    <div class="text-primary uppercase font-bitskraftBol pb-4">
+                        Contact Us
+                    </div>
+                    <div class="relative font-bitskraftBol text-5xl">
+                        Let’s innovate <br>
+                        together
+                    </div>
+                    <div class="font-bitskraftReg text-gray text-lg pb-4 pt-5">
+                        Whether you have a groundbreaking idea or need to enhance your existing systems, Bitskraft is
+                        here to bring your vision to life.
+                        <br>Let's work together to achieve your goals with tailored, innovative solutions.
+                    </div>
+                    <div class="font-bitskraftReg text-gray text-lg pb-8 pt-3">
+                       <span class="text-primary"> Got more questions?</span><br>
+                        We’re here to help. Call us on
+                        <span class="font-bitskraftBol">   +977 015213748</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="landing_image row-start-2 lg:row-start-1 col-start-1 lg:col-start-8 col-end-[-1]">
+                <div class="col-start-1 col-span-full md:col-span-4 grid grid-cols-4 gap-6 bg-white shadow-cshadow" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="flex flex-col col-span-full">
+                        
+                        <div class="px-6 pb-4">
+                            <div class="lg:px-6 pb-8 font-bitskraftReg">
+                                <form action="#" class="flex flex-col gap-6 py-4">
+                                    <input type="text" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Your name">
+                                    <input type="email" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="E-mail">
+                                    <input type="text" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Phone">
+                                    <textarea rows="4" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Project Details"></textarea>
+                                    <div
+                                    class="contact-us w-max text-center rounded-button bg-primary shadow-wbutton px-6 py-4 font-bitskraftMid text-white hover:text-primary hover:bg-white hover:shadow-bbutton cursor-pointer">
+                                    Send A Message
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- Global Offices  -->
+        <section class="services col-start-1 col-end-[-1] py-20 px-[50px] lg:px-[100px]">
+            <div class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center 2xl:mx-[100px]" >
+                <div class="text-center col-span-full">
+                 
+                    <div class="relative font-bitskraftBol text-3xl lg:text-4xl">
+                        Global Offices
+                    </div>
+                    <div class="font-bitskraftReg text-gray text-base lg:text-xl pb-8 pt-3 w-[80%] mx-auto">
+                        We have offices in three different countries located in USA, Nepal
+                        and Bangladesh.
+                    </div>
+                </div>
+            </div>
+            <div class="services-section grid grid-cols-12 gap-x-6 gap-y-12 items-center 2xl:mx-[100px] pt-8 pb-16" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1000">
+                <div class="col-start-1 col-span-full md:col-span-4 grid grid-cols-4 gap-6 bg-white shadow-cshadow" >
+                    <div class="flex flex-col col-span-full">
+                        <img src="images/us.png" alt="Dedicated Teams" class="mb-8 w-fit mx-auto" />
+                        <div class="text-center px-6 pb-12 flex flex-col">
+                            <div class="text-gray font-bitskraftLig">ADDRESS</div>
+                            <div class="font-bitskraftReg md:w-[80%] mx-auto">
+                                1460 Broadway, NY 10036, United States, New York
+                            </div>
+                            <div class="text-gray font-bitskraftLig mt-4">PHONE</div>
+                            <div class="font-bitskraftReg md:w-[80%] mx-auto">
+                                +1 (857)272-7220
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="md:col-start-5 col-span-full md:col-span-4 flex grid grid-cols-4 gap-6 bg-white shadow-cshadow">
+                    <div class="flex flex-col col-span-full">
+                        <img src="images/np.png" alt="Dedicated Teams" class="mb-8 w-fit mx-auto" />
+                        <div class="text-center px-6 pb-12 flex flex-col">
+                            <div class="text-gray font-bitskraftLig">ADDRESS</div>
+                            <div class="font-bitskraftReg md:w-[80%] mx-auto">
+                                Naxal, Manakamana Marg, 44600, Kathmandu, Nepal
+                            </div>
+                            <div class="text-gray font-bitskraftLig mt-4">PHONE</div>
+                            <div class="font-bitskraftReg w-[80%] mx-auto">
+                                +1 (857)272-7220
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="md:col-start-9 col-span-full md:col-span-4 flex grid grid-cols-4 gap-6 bg-white shadow-cshadow">
+                    <div class="flex flex-col col-span-full">
+                        <img src="images/bg.png" alt="Dedicated Teams" class="mb-8 w-fit mx-auto" />
+                        <div class="text-center px-6 pb-12 flex flex-col">
+                            <div class="text-gray font-bitskraftLig">ADDRESS</div>
+                            <div class="font-bitskraftReg md:w-[80%] mx-auto">
+                                MAR GARDEN, Block-A Suite-603, Niketon, Gulshan-1, Bangladesh,
+                                Dhaka
+                            </div>
+                            <div class="text-gray font-bitskraftLig mt-4">PHONE</div>
+                            <div class="font-bitskraftReg w-[80%] mx-auto">
+                                +1 (857)272-7220
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer  -->
+        <section class="services col-start-1 col-end-[-1] py-20 bg-primary-light px-[50px] lg:px-[100px]">
+            <div
+                class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-start 2xl:mx-[100px] bg-[url('/images/map.png')] bg-no-repeat bg-center border-b-[1px] border-gray pb-12">
+                <div class="logo col-start-1 col-span-full lg:col-span-4">
+                    <img src="images/logo.png" alt="Logo" />
+                    <div class="text-gray font-bitskraftReg md:w-[80%] pt-4 text-sm">
+                        We are Bitskraft. We craft tailored technology solutions to bring
+                        your ideas to life with precision & creativity.
+                    </div>
+                </div>
+                <div class="logo col-start-1 lg:col-start-5 col-span-full sm:col-span-8 lg:col-span-3">
+                    <div class="font-bitskraftBol text-lg text-gray">Contact</div>
+                    <div class="font-bitskraftReg flex flex-col">
+                        <div class="mt-8 cursor-pointer text-gray">
+                            <div class="font-bitskraftLig text-sm pb-1">
+                                Looking for collabration?
+                            </div>
+                            <div class="font-bitskraftBol text-lg">info@bitskfraft.com</div>
+                        </div>
+                        <div class="mt-4 cursor-pointer text-gray">
+                            <div class="font-bitskraftLig text-sm pb-1">
+                                Visit Our Head Office
+                            </div>
+                            <div class="font-bitskraftBol text-lg">
+                                Naxal, Kathmandu, Nepal
+                            </div>
+                        </div>
+                        <div class="mt-4 cursor-pointer text-gray">
+                            <div class="font-bitskraftLig text-sm pb-1">
+                                Monday - Friday: 10AM-6PM
+                            </div>
+                            <div class="font-bitskraftBol text-lg">+977-014537311</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo md:col-start-9 col-start-1 col-span-full lg:col-span-2">
+                    <div class="font-bitskraftBol text-lg text-gray">Company</div>
+                    <div class="font-bitskraftReg flex flex-col list-none gap-y-4">
+                        <li class="mt-8 cursor-pointer">Home</li>
+                        <li class="hover:text-primary cursor-pointer">Services</li>
+                        <li class="hover:text-primary cursor-pointer">Products</li>
+                        <li class="hover:text-primary cursor-pointer">About Us</li>
+                        <li class="hover:text-primary cursor-pointer">Careers</li>
+                    </div>
+                </div>
+                <div class="logo col-start-1 lg:col-start-11 col-end-[-1]">
+                    <div class="font-bitskraftBol text-lg text-gray">
+                        Connect With Us
+                    </div>
+                    <div class="font-bitskraftReg flex flex-col list-none gap-y-4">
+                        <li class="mt-8 hover:text-primary cursor-pointer">Facebook</li>
+                        <li class="hover:text-primary cursor-pointer">Instagram</li>
+                        <li class="hover:text-primary cursor-pointer">X</li>
+                        <li class="hover:text-primary cursor-pointer">LinkedIn</li>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-start md:justify-between lg:px-[100px] pt-8 md:pt-12 font-bitskraftReg">
+                <div class="text-gray">&copy;Copyright 2024, Bitskraft Pvt. Ltd.</div>
+                <div class="text-gray list-none flex gap-6">
+                    <li class="hover:text-primary cursor-pointer">Privacy Policy</li>
+                    <li class="hover:text-primary cursor-pointer">Data Policy</li>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
