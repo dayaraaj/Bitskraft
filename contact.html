@@ -142,16 +142,16 @@
                     <div class="flex flex-col col-span-full">
                         
                         <div class="px-6 pb-4">
-                            <div class="lg:px-6 pb-8 font-bitskraftReg">
-                                <form action="#" class="flex flex-col gap-6 py-4">
-                                    <input type="text" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Your name">
-                                    <input type="email" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="E-mail">
+                            <div class="lg:px-6 pb-8 ftemplate_qkd315eont-bitskraftReg">
+                                <form id="myform" class="flex flex-col gap-6 py-4">
+                                    <input id="name" name="name" type="text"  class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Your name">
+                                    <input type="email" id="email" name="email" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="E-mail" required>
                                     <input type="text" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Phone">
-                                    <textarea rows="4" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Project Details"></textarea>
-                                    <div
-                                    class="contact-us w-max text-center rounded-button bg-primary shadow-wbutton px-6 py-4 font-bitskraftMid text-white hover:text-primary hover:bg-white hover:shadow-bbutton cursor-pointer">
+                                    <textarea id="message" name="message" rows="4" class="text-gray bg-[#f6f6f6] pl-4 py-4 w-full"  placeholder="Project Details" required></textarea>
+                                    <button type="submit"
+                                    class="contact-us w-max text-center rounded-button bg-primary shadow-wbutton px-6 py-4 font-bitskraftMid text-white hover:text-primary hover:bg-white hover:shadow-bbutton cursor-pointer" >
                                     Send A Message
-                                </div>
+                                </button>
                                 </form>
                             </div>
                         </div>
@@ -308,6 +308,44 @@
     <script>
         AOS.init();
     </script>
+
+       <script
+       type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+     ></script>
+ 
+     <script type="text/javascript">      (function () {
+         emailjs.init("JzYuA_L32CjD1XbAn");
+       })();
+     </script>
+     
+     <script>
+      emailjs.sendForm("service_nr3nlok", "template_qkd315e", "#myform")
+      </script>
+
+      <script>
+        // listen to the form submission
+        document
+          .getElementById("myform")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+  
+            const serviceID = "service_nr3nlok";
+            const templateID = "template_qkd315e";
+  
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+              (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Your message is sent.");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+              }
+            );
+          });
+      </script>
 </body>
 
 </html>
