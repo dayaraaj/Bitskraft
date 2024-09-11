@@ -14,8 +14,126 @@
 
   <body>
     <main class="grid grid-cols-12 gap-x-6">
-      <navigation
-        class="col-start-1 col-end-[-1] flex justify-between items-center py-8 sticky top-0 bg-white z-10 px-[50px] lg:px-[100px]"
+      <navigation id="navbarinit"
+      class="hidden bg-white col-start-1 col-end-[-1] flex justify-between items-center py-8 sticky top-0 z-10 px-[50px] lg:px-[100px] transition-colors duration-300 ease-in-out"
+    >
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Bitskfrat Logo"
+        /></a>
+      </div>
+      <div class="hidden lg:block">
+        <div class="main-nav font-bitskraftMid flex list-none gap-8 text-lg">
+          <li class="text-primary">Home</li>
+          <li class="cursor-pointer group">
+            <a class="hover:text-primary" href="#services">Services</a>
+            <ul
+              class="dropdown py-4 pl-6 pr-12 invisible group-hover:visible absolute shadow-wbutton z-40 bg-white rounded-[10px]"
+            >
+              <li class="hover:text-primary py-2">
+                <a href="dedicated-teams.html">Dedicated Team </a>
+              </li>
+              <li class="hover:text-primary py-2">
+                <a href="staff-auhmentation.html">Staff Augmentation</a>
+              </li>
+              <li class="hover:text-primary py-2">
+                <a href="software-outsourcing.html">Software Outsourcing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer group">
+            <a class="hover:text-primary">Products</a>
+            <ul
+              class="dropdown py-4 pl-6 pr-12 invisible group-hover:visible absolute shadow-wbutton z-40 bg-white rounded-[10px]"
+            >
+              <li class="hover:text-primary py-2">
+                <a href="https://mikha.bitskraft.com/" target="_blank">
+                  Mikha
+                </a>
+              </li>
+              <li class="hover:text-primary py-2">
+                <a href="https://karyaflow.bitskraft.com/" target="_blank">
+                  Karyaflow</a
+                >
+              </li>
+              <li class="hover:text-primary py-2">
+                <a href="https://koili.com.np/" target="_blank"> Koili</a>
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-primary cursor-pointer">
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li class="hover:text-primary cursor-pointer">
+            <a href="careers.html">Careers</a>
+          </li>
+        </div>
+      </div>
+      <div class="hidden lg:block">
+        <div
+          class="contact-us text-center rounded-button bg-primary shadow-wbutton px-6 py-4 font-bitskraftMid text-white hover:text-primary hover:bg-white hover:shadow-bbutton cursor-pointer"
+        >
+          <a href="contact.html"> Contact Us</a>
+        </div>
+      </div>
+      <div class="lg:hidden relative">
+        <button id="menuu-toggle">
+          <i class="bx bx-menu text-2xl" undefined></i>
+        </button>
+        <div
+          id="menuu"
+          class="bg-white w-[100vw] absolute -right-[3.1rem] h-[100vh] mt-8 hidden"
+        >
+          <div
+            class="font-bitskraftMid flex flex-col list-none gap-8 text-lg text-center pt-12"
+          >
+            <li class="hover:text-primary"><a href="index.html">Home</a></li>
+            <li class="cursor-pointer">
+              Services
+              <ol>
+                <li class="hover:text-primary text-base py-2">
+                  <a href="dedicated-teams.html">Dedicated Team </a>
+                </li>
+                <li class="hover:text-primary text-base py-2">
+                  <a href="staff-auhmentation.html">Staff Augmentation</a>
+                </li>
+                <li class="hover:text-primary text-base py-2">
+                  <a href="software-outsourcing.html">Software Outsourcing</a>
+                </li>
+              </ol>
+            </li>
+            <li class="cursor-pointer">
+              Products
+              <ol>
+                <li class="hover:text-primary text-base py-2">
+                  <a href="https://mikha.bitskraft.com/" target="_blank">
+                    Mikha
+                  </a>
+                </li>
+                <li class="hover:text-primary text-base py-2">
+                  <a href="https://karyaflow.bitskraft.com/" target="_blank">
+                    Karyaflow</a
+                  >
+                </li>
+                <li class="hover:text-primary text-base py-2">
+                  <a href="https://koili.com.np/" target="_blank"> Koili</a>
+                </li>
+              </ol>
+            </li>
+            <li class="hover:text-primary cursor-pointer">
+              <a href="aboutus.html">About Us</a>
+            </li>
+            <li class="hover:text-primary cursor-pointer">
+              <a href="careers.html">Careers</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </navigation>
+      <div class="col-start-1 col-end-[-1] bg-[url('./images/landingg.png')] pb-12 sm:pb-0 sm:h-[100vh] bg-center bg-cover bg-no-repeat">
+
+      <navigation id="navbar"
+        class="col-start-1 col-end-[-1] flex justify-between items-center py-8 sticky top-0 z-10 px-[50px] lg:px-[100px] transition-colors duration-300 ease-in-out"
       >
         <div class="logo">
           <a href="index.html"
@@ -71,7 +189,7 @@
         </div>
         <div class="hidden lg:block">
           <div
-            class="contact-us text-center rounded-button bg-white shadow-wbutton px-6 py-4 font-bitskraftMid text-primary hover:text-white hover:bg-primary hover:shadow-bbutton cursor-pointer"
+            class="contact-us text-center rounded-button bg-primary shadow-wbutton px-6 py-4 font-bitskraftMid text-white hover:text-primary hover:bg-white hover:shadow-bbutton cursor-pointer"
           >
             <a href="contact.html"> Contact Us</a>
           </div>
@@ -82,10 +200,10 @@
           </button>
           <div
             id="menu"
-            class="bg-white w-[100vw] absolute right-0 h-[100vh] mt-8 hidden"
+            class="bg-white w-[100vw] absolute -right-[3.1rem] h-[100vh] mt-8 hidden"
           >
             <div
-              class="font-bitskraftMid flex flex-col list-none gap-8 text-lg text-center pt-12 pl-12"
+              class="font-bitskraftMid flex flex-col list-none gap-8 text-lg text-center pt-12"
             >
               <li class="hover:text-primary"><a href="index.html">Home</a></li>
               <li class="cursor-pointer">
@@ -130,25 +248,24 @@
           </div>
         </div>
       </navigation>
-
       <!-- landing  -->
       <div
         class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-center px-[50px] lg:px-[100px] 2xl:mx-[100px]"
       >
         <section class="landing_text col-start-1 col-end-[-1] lg:col-end-8">
           <div class="flex flex-col">
-            <div class="text-primary uppercase font-bitskraftBol pb-4">
+            <!-- <div class="text-primary uppercase font-bitskraftBol pb-4">
               Great Place To Work Certified
-            </div>
+            </div> -->
             <div class="relative font-bitskraftBol text-5xl">
               Innovative digital<br />
               solutions.
               <img
                 src="images/clip_path.png"
-                class="absolute top-[2.3rem] z-[-1]"
+                class="absolute top-[2.3rem]"
               />
             </div>
-            <div class="font-bitskraftReg text-gray text-xl pb-8 pt-5">
+            <div class="font-bitskraftReg text-xl pb-8 pt-5">
               We craft tailored technology solutions to bring<br />
               your ideas to life with precision & creativity.
             </div>
@@ -168,6 +285,7 @@
           <img src="images/landing-image.png" alt="Landing page image" />
         </section>
       </div>
+    </div>
 
       <!-- Trusting Partner  -->
       <section class="col-start-1 col-end-[-1]">
@@ -745,11 +863,12 @@
           </div>
         </div>
       </section>
-
+      <img src="images/footer_mix.svg" alt="Footer clipart" class="max-w-[98vw] 2xl:max-w-[99vw] w-[100vw]">
       <!-- Footer  -->
       <section
         class="services col-start-1 col-end-[-1] py-20 bg-primary-light px-[50px] lg:px-[100px]"
       >
+    
         <div
           class="col-start-1 col-end-[-1] grid grid-cols-12 gap-6 items-start 2xl:mx-[100px] bg-[url('/images/map.png')] bg-no-repeat bg-center border-b-[1px] border-gray pb-12"
         >
